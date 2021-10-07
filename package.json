@@ -4,7 +4,8 @@
   "description": "React split-pane component",
   "exports": {
     ".": "./dist/modern.js",
-    "./dist/": "./dist/"
+    "./dist/": "./dist/",
+    "./src/": "./src/"
   },
   "main": "./dist/legacy.js",
   "module": "./dist/module.js",
