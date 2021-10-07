@@ -21,7 +21,9 @@
   "files": [
     "dist/*.js",
     "dist/*.css",
-    "dist/types/src/**/*.d.ts"
+    "dist/types/src/**/*.d.ts",
+    "src/**/*.js",
+    "src/**/*.module.css"
   ],
   "dependencies": {
     "classnames": "^2.3.0",
