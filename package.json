@@ -1,5 +1,5 @@
 {
-  "name": "allotment",
+  "name": "@qwtel/allotment",
   "version": "1.2.0",
   "description": "React split-pane component",
   "exports": {
@@ -9,6 +9,9 @@
   "main": "./dist/legacy.js",
   "module": "./dist/module.js",
   "types": "./dist/types/src/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
     "react",
     "split",
