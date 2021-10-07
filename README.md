@@ -45,11 +45,14 @@ yarn add allotment
 ```jsx
 import React from "react";
 import { Allotment } from "allotment";
+import "allotment/dist/style.css";
 
 export const App = () => (
-  <Allotment>
-    <ComponentA>
-    <ComponentB>
-  </Allotment>
+  <div style={{ width: '100vw', height: '100vh' }}>
+    <Allotment>
+      <ComponentA>
+      <ComponentB>
+    </Allotment>
+  </div>
 );
 ```
