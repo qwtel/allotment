@@ -23,6 +23,7 @@
     "dist/*.css",
     "dist/types/src/**/*.d.ts",
     "src/**/*.js",
+    "src/**/*.d.ts*",
     "src/**/*.module.css"
   ],
   "dependencies": {
@@ -78,9 +79,10 @@
     "react-dom": "^17.0.0"
   },
   "scripts": {
-    "build": "rollup -c && yarn build-types",
+    "build": "rollup -c & yarn build-types & yarn build-es2018 & wait",
     "build-storybook": "build-storybook",
     "build-types": "tsc",
+    "build-es2018": "tsc -p tsconfig2018.json",
     "prepare": "husky install",
     "release": "standard-version",
     "storybook": "start-storybook -p 6006",
