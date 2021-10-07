@@ -31,6 +31,7 @@
     "eventemitter3": "^4.0.0",
     "lodash.clamp": "^4.0.0",
     "lodash.debounce": "^4.0.0",
+    "shx": "^0.3.3",
     "use-resize-observer": "^8.0.0"
   },
   "devDependencies": {
@@ -79,11 +80,13 @@
     "react-dom": "^17.0.0"
   },
   "scripts": {
+    "clean": "shx rm -rf dist && shx rm -f 'src/**/*.js' && shx rm -f 'src/**/!(style).d.ts*'",
     "build": "rollup -c & yarn build-types & yarn build-es2018 & wait",
     "build-storybook": "build-storybook",
     "build-types": "tsc",
     "build-es2018": "tsc -p tsconfig2018.json",
     "prepare": "husky install",
+    "prepack": "npm run clean && npm run build",
     "release": "standard-version",
     "storybook": "start-storybook -p 6006",
     "test": "jest"
