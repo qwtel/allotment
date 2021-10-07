@@ -1,6 +1,6 @@
 {
   "name": "@qwtel/allotment",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "React split-pane component",
   "exports": {
     ".": "./dist/modern.js",
