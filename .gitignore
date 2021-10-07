@@ -107,4 +107,6 @@ dist
 
 # TypeScript transpiled JS files
 src/**/*.js
+src/**/*.d.ts*
 stories/**/*.js
+stories/**/*.d.ts*
